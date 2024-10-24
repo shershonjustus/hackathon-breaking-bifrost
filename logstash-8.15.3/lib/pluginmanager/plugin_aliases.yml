@@ -1,0 +1,12 @@
+#CHECKSUM: b96d7a619caa578ee6ce4fb71873f6beb97eff6b4e6529f3735708a9d06af11e
+# DON'T EDIT THIS FILE, PLEASE REFER TO logstash-core/src/main/resources/org/logstash/plugins/AliasRegistry.yml
+input:
+  - alias: elastic_agent
+    from: beats
+    docs:
+      - replace: ":plugin: beats"
+        with: ":plugin: elastic_agent"
+      - replace: ":plugin-uc: Beats"
+        with: ":plugin-uc: Elastic Agent"
+      - replace: ":plugin-singular: Beat"
+        with: ":plugin-singular: Elastic Agent"

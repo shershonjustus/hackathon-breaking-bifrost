@@ -1,0 +1,28 @@
+<div>
+    <div *ngIf="!this.token" id="form-container">
+      <h2>Bifrost Log Fetcher</h2>
+      <label for="username">Username:</label>
+      <input type="text" id="username" [(ngModel)]="username"><br>
+    
+      <label for="password">Password:</label>
+      <input type="password" id="password" [(ngModel)]="password"><br>
+    
+      <label for="env">Choose environment:</label>
+      <select [(ngModel)]="env">
+        <option value="dev">DEV</option>
+        <option value="uat">UAT</option>
+        <option value="prd">PRD</option>
+      </select><br>
+      <div id="button-container">
+        <button (click)="authenticate()">Authenticate</button>
+      </div> 
+    </div>
+    <div *ngIf="this.token" id="form-container">
+      <h2>Bifrost Log Fetcher</h2>
+      <label for="jobId">Job ID:</label>
+      <input type="text" id="jobId" [(ngModel)]="jobId"><br>
+      <div id="button-container">
+        <button (click)="fetchBifrostData()">Fetch Logs</button>
+      </div>
+    </div>
+  </div>

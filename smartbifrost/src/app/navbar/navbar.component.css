@@ -1,0 +1,36 @@
+h1 {
+    color: #14e486; 
+    text-align: center; 
+}
+
+#navbar-container{
+    display: flex;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+#logo-container{
+    
+}
+
+#button-container{
+    position: absolute;
+    right: 0;
+    margin-right: 2%;
+}
+
+button{
+    background-color: #01180c;
+    color: white; 
+    border: solid 1px white; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    display: inline-block; 
+    font-weight: bold; 
+}
+
+button:hover{
+    background-color: white;
+    color: #01180c; 
+}

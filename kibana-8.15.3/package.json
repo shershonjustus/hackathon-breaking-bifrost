@@ -1,0 +1,29 @@
+{
+  "name": "kibana",
+  "description": "Kibana is a browser based analytics and search dashboard for Elasticsearch. Kibana is a snap to setup and start using. Kibana strives to be easy to get started with, while also being flexible and powerful, just like Elasticsearch.",
+  "keywords": [
+    "kibana",
+    "elasticsearch",
+    "logstash",
+    "analytics",
+    "visualizations",
+    "dashboards",
+    "dashboarding"
+  ],
+  "version": "8.15.3",
+  "branch": "8.15",
+  "build": {
+    "number": 76711,
+    "sha": "3933429968aafb1ba31319fc38649d0f974044bf",
+    "distributable": true,
+    "release": true,
+    "date": "2024-10-09T11:11:51.946Z"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elastic/kibana.git"
+  },
+  "engines": {
+    "node": "20.15.1"
+  }
+}

@@ -1,0 +1,105 @@
+<div class="job-id-section">
+    <h1>Job ID: {{ jobId }}</h1>
+  </div>
+  
+  <div class="container">
+    <!-- Navigation Links Section -->
+    <div class="section">
+      <h3>Navigation Links (HTML)</h3>
+      <div class="scrollable-section">
+        <table>
+          <thead>
+            <tr>
+              <th>Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let link of navigationLinks">
+              <td>
+                <a [href]="link" target="_blank">{{ link }}</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  
+<!-- Job Details Section -->
+<!-- Job Details Section -->
+<div class="section">
+    <h3>Job Details</h3>
+    <div class="scrollable-section">
+      <table>
+        <tbody>
+          <tr>
+            <th>Job ID</th>
+            <td>{{ jobId }}</td>
+          </tr>
+          <tr>
+            <th>Credential ID</th>
+            <td>{{ credentialId }}</td>
+          </tr>
+          <tr>
+            <th>Organization Name</th>
+            <td>{{ organizationName }}</td>
+          </tr>
+          <tr>
+            <th>Provider Alias</th>
+            <td>{{ providerAlias }}</td>
+          </tr>
+          <tr>
+            <th>Acquisition Template</th>
+            <td>{{ acquisitionTemplate }}</td>
+          </tr>
+          <tr>
+            <th>Extraction Status</th>
+            <td>{{ extractionStatus }}</td>
+          </tr>
+          <tr>
+            <th>Statement Count</th>
+            <td>{{ statementCount }}</td>
+          </tr>
+          <tr>
+            <th>Start Timestamp</th>
+            <td>{{ startTimestamp }}</td>
+          </tr>
+          <tr>
+            <th>Completed Timestamp</th>
+            <td>{{ completedTimestamp }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </div>
+  
+  <!-- Account to Source Signature Mapping Section -->
+  <div class="section-wide">
+    <h3>Account Numbers and Point Source Mapping </h3>
+    <div class="scrollable-section">
+      <table>
+        <thead>
+          <tr>
+            <th>Account Number</th>
+            <th>Point Sources</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let accountNumber of Object.keys(accountSignatureMap)">
+            <td>{{ accountNumber }}</td>
+            <td>
+              <ul>
+                <li *ngFor="let signature of accountSignatureMap[accountNumber]">
+                  <a [href]="signature" target="_blank">{{ signature }}</a>
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <ng-template #noData>
+    <p>No data available to display.</p>
+  </ng-template>
