@@ -10,3 +10,18 @@
 **/data
 
 **/logs
+
+elasticsearch-8.15.3/jdk.app/
+elasticsearch-8.15.3/lib/
+elasticsearch-8.15.3/modules/
+filebeat-8.15.3-darwin-x86_64/module/
+filebeat-8.15.3-darwin-x86_64/modules.d/
+kibana-8.15.3/src/
+kibana-8.15.3/x-pack/
+logstash-8.15.3/jdk.app/
+logstash-8.15.3/logstash-core-plugin-api/
+logstash-8.15.3/logstash-core/
+logstash-8.15.3/modules/
+logstash-8.15.3/tools/
+logstash-8.15.3/vendor/
+logstash-8.15.3/x-pack/
